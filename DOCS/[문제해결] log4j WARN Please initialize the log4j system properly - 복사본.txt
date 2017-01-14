@@ -1,0 +1,40 @@
+[문제해결] log4j:WARN Please initialize the log4j system properly   3)Java개발 / [IT개발자] 
+2012.04.22. 21:15
+복사http://blog.naver.com/kkson50/120158043864
+전용뷰어 보기
+[현상]
+자바 프로그램을 동작시켰더니 아래와 같은 WARN이 발생을 했습니다.
+
+log4j:WARN No appenders could be found for logger (org.apache.cayenne.conf.DefaultConfiguration).
+log4j:WARN Please initialize the log4j system properly.
+[원인]
+log4j는 자바에서 사용하는 로그를 기록하는 라이브러리입니다.
+이 라이브러리를 이용해서 많은 프로그램들이 디버깅용 로그를 남긴다든지, 시스템에 중요한 정보를 남긴다는지를 합니다.
+log4j는 현재 동작하는 자바환경에서 
+log4j.properties 혹은 log4j.xml 파일을 찾아서 해당하는 파일의 정보값을 읽어서 
+이렇게 설정된 대로 로그를 남기게 됩니다.
+이 파일들이 CLASSPATH에서 찾을 수 없으니 이러한 워닝이 발생한것입니다.
+
+[해결방법]
+
+-Dlog4j.configuration=log4j_test.xml 추가
+
+아래와 같은 형태의 TEXT파일 [log4j.properties] 을 WEB-INF/classss/ 에 만드시면 됩니다.
+
+# Set root logger level to DEBUG and its only appender to A1.
+log4j.rootLogger=DEBUG, A1
+# A1 is set to be a ConsoleAppender.
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+# A1 uses PatternLayout.
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+[기타]
+1. log4j.properties 는 CLASSPATH에 위치만 하면 됩니다.
+
+2. web.xml에 아래와 같이 명시적으로 설정해서 사용해도 됩니다.^^
+ <context-param>
+  <param-name>log4jConfigLocation</param-name>
+  <param-value>/WEB-INF/log4j.properties</param-value>
+ </context-param> 
+3. log4j.properties 의 자세한 설정방법은 아래를 참고하세요
+   http://www.jami.name/205
+[출처] [문제해결] log4j:WARN Please initialize the log4j system properly|작성자 까만손오공
