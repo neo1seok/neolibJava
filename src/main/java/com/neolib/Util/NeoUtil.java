@@ -9,8 +9,10 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import com.neolib.Info.BNote;
 import com.google.common.collect.Maps;
@@ -681,6 +683,9 @@ public class NeoUtil {
 	public static byte[] GetRandData(int legth, boolean isText) {
 		return Rand.GetRandData(legth, isText);
 	}
+	
+	
+	
 
 	// public static byte[] GetRandData( byte [] ret,int legth, bool isText)
 	// {
@@ -885,6 +890,32 @@ public class NeoUtil {
 		return etcmapparam;
 
 	}
+	public static Map<String,String> GetMapsFromArgs_new(String [] argv){
+		Map<String,String> maps  = new LinkedHashMap<String,String>();
+		
+		int length = argv.length;
+		
+		for(String tmp : argv){
+			if(!tmp.startsWith("-")) continue;
+			maps.put(tmp.substring(1), "");
+		}
+;
+//		maps = {tmp[1:]: '' for tmp in argv if tmp.startswith('-')};
+
+		for(Entry<String, String> enset : maps.entrySet()){
+			int idx = Arrays.asList(argv).indexOf("-"+enset.getKey());
+			if (idx + 1 >= length) continue;
+			if (argv[idx + 1].startsWith("-")) continue;
+			maps.put(enset.getKey(), argv[idx+1]);
+			
+		}
+
+	
+;
+;
+		return maps;
+		
+	}
 	public static boolean isSafeEqual(String org,String dst){
 		
 		if(org !=null && org.equals(dst)){
@@ -893,4 +924,11 @@ public class NeoUtil {
 		return false;
 		
 	}
+	 public static void main( String[] args )
+	    {
+	    	
+	 
+			
+	        
+	    }
 }

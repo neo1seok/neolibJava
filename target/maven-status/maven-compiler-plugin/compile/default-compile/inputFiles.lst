@@ -25,6 +25,7 @@ D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Info\CAC
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoThread\BaseNeoThread.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\tangible\DotNetToJavaDateHelper.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\DefManagerFrame.java
+D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoServer\NeoDefClientHandler.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\ManualResetEvent.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\Stopwatch.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\DefBaseManager.java
@@ -33,6 +34,7 @@ D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Info\Neo
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\BaseNeoManager.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Info\BN.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\db\DefDbHanlingMySQL.java
+D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoServer\INeoClientHandler.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\DefConvertingManager.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\AutoResetEvent.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\INeoManager.java
@@ -42,6 +44,7 @@ D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\db\DefDb
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\NeoAverage.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Info\LOGICAL_PROCESSOR_RELATIONSHIP.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\NeoHexString.java
+D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoServer\SampleHandler.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\NEOMANGERINFO.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Info\VERIONINFO.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\CONTROLLTHREADTYPE.java
@@ -50,6 +53,7 @@ D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoThrea
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\DefMediaOutManager.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\ThreadEvent.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\db\IDbTableHandling.java
+D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoServer\NeoServerHandler.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\Util\PerformCheck.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\NeoMFW\MANAGERGROUP.java
 D:\PROJECT\GIANT\SRC\APACHE_GIANTSERVER\neoLib\src\main\java\com\neolib\db\NeoSqlException.java

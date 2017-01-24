@@ -36,6 +36,7 @@ public class NLoger implements INLoger {
 			return ;
 		}
 		logger.log(java.util.logging.Level.INFO,msg);
+		loger.debug(msg);
 		
 		//System.out.println();
 	}
